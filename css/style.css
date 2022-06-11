@@ -1,0 +1,148 @@
+:root{
+
+/* Colors: */
+
+    /* Primary */
+    --dark-blue-layout: hsl(217, 28%, 15%);
+    --background: hsl(218, 28%, 13%);
+    --footer:hsl(216, 53%, 9%);
+    --test-background:hsl(219, 30%, 18%);
+
+    /* Accent */
+    --cyan: hsl(176, 68%, 64%);
+    --blue: hsl(198, 60%, 50%);
+    --red: hsl(0, 100%, 63%);
+
+    /* Neutral */
+    --white: hsl(0, 0%, 100%);
+
+/* Typography */
+
+    --font-size: 14px;
+    --font-family-heading: 'Raleway', sans-serif;
+    --font-family-body: 'Open Sans', sans-serif;
+    
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-size: 14px;
+    background-color: var(--test-background);
+    color: var(--white);
+    font-family: var(--font-family-body);
+}
+
+h1,h2,h3,h4,h5{
+    font-family: var(--font-family-heading);
+}
+nav{
+    padding: 2rem;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    gap: 5em;
+    font-weight: 400;
+}
+
+nav ul li:first-child{
+    flex: 1
+}
+
+nav ul li{
+    list-style: none;
+}
+
+nav ul li a{
+    color: var(--white);
+    text-decoration: none;
+}
+
+.intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding-bottom: 8.6rem;
+    position: relative;
+}
+
+.intro img{
+    width: 500px;
+}
+
+.intro h1{
+    max-width: 650px;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.intro .info-intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.intro p{
+    max-width: 439px;
+    text-align: center;
+}
+
+button{
+    padding: 12px;
+    text-align: center;
+    width: 200px;
+    border-radius: 50px;
+    border: none;
+    background-image: linear-gradient(90deg,hsl(176, 68%, 64%),hsl(198, 60%, 50%));
+    color: #fff;
+}
+
+.curvy{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    z-index: -1;
+}
+
+.curvy img{
+    width: 100%;
+    position: relative;
+    top: 5px;
+}
+
+.container{
+    background-color: #181f2b;
+    padding: 2rem;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 6rem;
+    align-items: center;
+}
+
+.row .item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex: 1;
+}
+
+.row .item p{
+    width: 380px;
+    text-align: center;
+}
+
