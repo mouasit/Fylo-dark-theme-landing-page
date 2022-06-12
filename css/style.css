@@ -64,13 +64,18 @@ nav ul li a{
     text-decoration: none;
 }
 
+main{
+    background-color: #181f2b;
+    border-top-left-radius: 5000px;
+    border-top-right-radius: 500px;
+}
+
 .intro{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    padding-bottom: 8.6rem;
     position: relative;
 }
 
@@ -118,11 +123,6 @@ button{
     width: 100%;
     position: relative;
     top: 5px;
-}
-
-.container{
-    background-color: #181f2b;
-    padding: 2rem;
 }
 
 .row{
