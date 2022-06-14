@@ -198,10 +198,10 @@ button{
 
 .feedback{
     padding-top: 9rem;
-    padding-bottom: 9rem;
     background-color: var(--background-curvy);
     display: flex;
     justify-content: center;
+    position: relative;
 }
 
 .bg-box{
@@ -325,14 +325,67 @@ button{
 }
 
 
+.form{
+    position: absolute;
+    width: 100%;
+    bottom:-15.6rem;
+    display: flex;
+    justify-content: center;
+}
 
+.container-form{
+    padding: 3rem;
+    background-color: var(--test-background);
+    border-radius: 5px;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2rem;
+    flex-direction: column;
+    width: 715px;
+}
 
+.container-form h1{
+    font-size: 2rem;
+}
 
+.container-form p{
+    text-align: center;
+}
 
+.container-form input{
+    background-color: var(--white);
+    padding: 12px;
+    width: 400px;
+    border-radius: 50px;
+    border: none;
+    padding-left: 14px;
+    padding-right: 14px;
+}
 
+input::placeholder{
+    opacity: 0.3;
+}
 
+.fill{
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+}
 
+.footer{
+    padding-top: 15.6rem;
+}
 
+.bg-cut{
+    height: 7.8rem;
+    background-color: var(--background-curvy);
+}
+
+.feedback{
+    padding-bottom: 9rem;
+}
 
 .bg-content{
     background-color: var(--background-curvy);
