@@ -47,26 +47,26 @@ main{
 h1,h2,h3,h4,h5{
     font-family: var(--font-family-heading);
 }
-nav{
+.nav{
     padding: 2rem;
 }
 
-nav ul{
+.nav ul{
     display: flex;
     align-items: center;
     gap: 5em;
     font-weight: 400;
 }
 
-nav ul li:first-child{
+.nav ul li:first-child{
     flex: 1
 }
 
-nav ul li{
+.nav ul li{
     list-style: none;
 }
 
-nav ul li a{
+.nav ul li a{
     color: var(--white);
     text-decoration: none;
 }
@@ -128,7 +128,7 @@ button{
     border-radius: 50px;
     border: none;
     background-image: linear-gradient(90deg,hsl(176, 68%, 64%),hsl(198, 60%, 50%));
-    color: #fff;
+    color: var(--white);
     cursor: pointer;
 }
 
@@ -198,7 +198,7 @@ button{
 
 .feedback{
     padding-top: 9rem;
-    padding-bottom: 30rem;
+    padding-bottom: 9rem;
     background-color: var(--background-curvy);
     display: flex;
     justify-content: center;
@@ -225,7 +225,6 @@ button{
 
 }
 
-
 .quotes{
     position: absolute;
     top: -35px;
@@ -249,11 +248,81 @@ button{
     gap: .2rem;
 }
 
+.footer{
+    padding: 9rem;
+    background-color: var(--footer);
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
 
+.footer .logo{
+    width: 176px;
+}
 
+.info-footer{
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+    align-items: flex-start;
+}
 
+.item-info{
+    display: flex;
+    gap: 1.2rem;
+    align-items: center;
+}
 
+.contact{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
 
+.footer nav{
+    display: flex;
+    gap: 4rem;
+}
+
+.footer nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.footer nav ul li{
+    list-style: none;
+}
+
+.footer nav ul li a{
+    color: var(--white);
+    text-decoration: none;
+}
+
+.social-media{
+    display: flex;
+    gap: 1.2rem;
+}
+
+.social-media a{
+    color: var(--white);
+    border: 1px solid var(--white);
+    border-radius: 50px;
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+}
+
+.location{
+    align-items: flex-start;
+}
+
+.location{
+    width: 400px;
+}
 
 
 
