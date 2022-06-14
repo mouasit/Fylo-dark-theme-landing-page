@@ -127,14 +127,16 @@
             </div>
           </div>
           <section class="form">
-
             <div class="container-form">
               <h1>Get early access today</h1>
               <p>It only takes a minute to sign up and our free starter tier is extremely generous. if you have any questions, our support team would be happy to help you.</p>
-              <div class="fill">
-                <input type="text" placeholder="email@example.com">
-                <button>Get Started For Free</button>
-              </div>
+              <form id="form" class="fill" action="">
+                <div class="groupe-input">
+                  <input id="input" type="text" placeholder="email@example.com">
+                  <div id="error" class="error"><i class='bx bxs-error-circle'></i> Please enter a valid email address</div>
+                </div>
+                <button id="submit" type="submit">Get Started For Free</button>
+              </form>
             </div>
   
           </section>
@@ -181,46 +183,8 @@
         </section>
       </div>
     </section>
-
     <div class="bg-content"></div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
   </main>
-
+  <script src="./js/index.js"></script>
 </body>
 </html>
