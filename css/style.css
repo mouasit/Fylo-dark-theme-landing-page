@@ -40,9 +40,6 @@ body{
     justify-content: center;
 }
 
-main{
-    width: 3000px;
-}
 
 h1,h2,h3,h4,h5{
     font-family: var(--font-family-heading);
@@ -103,11 +100,11 @@ nav ul li a:hover{
 }
 
 .intro img{
-    width: 35%;
+    width: 60%;
 }
 
 .intro h1{
-    max-width: 650px;
+    width: 60%;
     text-align: center;
     font-size: 2rem;
 }
@@ -121,7 +118,7 @@ nav ul li a:hover{
 }
 
 .intro p{
-    max-width: 439px;
+    width: 50%;
     text-align: center;
 }
 
@@ -141,18 +138,21 @@ button:hover{
     background-color: hsl(176, 68%, 64%);
 }
 
+
 .items{
     display: flex;
     flex-direction: column;
     gap: 6rem;
     padding-top: 9rem;
+    background-color: var(--background-curvy);
 }
 
 .row{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 11rem;
+    gap: 6rem;
+    flex-direction: column;
 }
 .row .item{
     display: flex;
@@ -174,6 +174,7 @@ button:hover{
     align-items: center;
     gap: 6rem;
     background-color: var(--background-curvy);
+    flex-direction: column;
 
 }
 
@@ -186,12 +187,12 @@ button:hover{
 }
 
 .production h1{
-    max-width: 300px;
+    width: 100%;
     font-size: 2rem;
 }
 
 .production p{
-    max-width: 510px;
+    width: 100%;
 }
 
 .production a{
@@ -222,6 +223,7 @@ button:hover{
     display: flex;
     gap: 6rem;
     position: relative;
+    flex-direction: column;
 }
 
 
@@ -436,4 +438,67 @@ input::placeholder{
 .bg-content{
     background-color: var(--background-curvy);
     height: 700px;
+}
+
+
+@media screen and (min-width: 1440px) {
+    body{
+        background-color: green;
+    }
+    main{
+        width: 3000px;
+    }
+
+    .intro img{
+        width: 35%;
+    }
+
+    .intro h1{
+        width: 650px;
+    }
+
+    .intro p{
+        width: 439px;
+    }
+
+    .items{
+        background-color: transparent;
+    }
+    
+    .row{
+        gap: 11rem;
+        flex-direction: row;
+    }
+    .row .item{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+
+    .production {
+        flex-direction: row;
+    }
+
+    .info-production{
+        justify-content: flex-start;
+        align-items: flex-start;
+    
+    }
+    
+    .production h1{
+        width: 300px;
+        text-align: left;
+    }
+    
+    .production p{
+        width: 510px;
+        text-align: left;
+    }
+
+    .bg-box{
+        flex-direction: row;
+    }
 }
