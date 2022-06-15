@@ -40,6 +40,9 @@ body{
     justify-content: center;
 }
 
+main{
+    width: 100%;
+}
 
 h1,h2,h3,h4,h5{
     font-family: var(--font-family-heading);
@@ -51,8 +54,14 @@ h1,h2,h3,h4,h5{
 .nav ul{
     display: flex;
     align-items: center;
-    gap: 5em;
+    gap: 2em;
     font-weight: 400;
+    flex-direction: column;
+}
+
+.nav-item{
+    display: flex;
+    gap: 5rem;
 }
 
 .nav ul li:first-child{
@@ -77,6 +86,10 @@ nav ul li a:hover{
     padding-top: 19%;
 }
 
+.img-desktop{
+    display: none;
+}
+
 .container .img-curvy{
     width: 100%;
     position: relative;
@@ -97,14 +110,16 @@ nav ul li a:hover{
     justify-content: center;
     align-items: center;
     gap: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
 .intro img{
-    width: 60%;
+    width: 100%;
 }
 
 .intro h1{
-    width: 60%;
+    width: 100%;
     text-align: center;
     font-size: 2rem;
 }
@@ -118,7 +133,7 @@ nav ul li a:hover{
 }
 
 .intro p{
-    width: 50%;
+    width: 90%;
     text-align: center;
 }
 
@@ -145,6 +160,8 @@ button:hover{
     gap: 6rem;
     padding-top: 9rem;
     background-color: var(--background-curvy);
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
 .row{
@@ -162,8 +179,13 @@ button:hover{
     gap: 1rem;
 }
 
+.row .item h2{
+    width: 100%;
+    text-align: center;
+}
+
 .row .item p{
-    width: 380px;
+    width: 100%;
     text-align: center;
 }
 
@@ -175,6 +197,8 @@ button:hover{
     gap: 6rem;
     background-color: var(--background-curvy);
     flex-direction: column;
+    padding-left: 2rem;
+    padding-right: 2rem;
 
 }
 
@@ -183,15 +207,22 @@ button:hover{
     flex-direction: column;
     gap: 1.2rem;
     position: relative;
-
+    justify-content: center;
+    align-items: center;
 }
 
 .production h1{
     width: 100%;
     font-size: 2rem;
+    text-align: center;
 }
 
 .production p{
+    width: 100%;
+    text-align: center;
+}
+
+.production img{
     width: 100%;
 }
 
@@ -217,6 +248,8 @@ button:hover{
     display: flex;
     justify-content: center;
     position: relative;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
 .bg-box{
@@ -224,13 +257,16 @@ button:hover{
     gap: 6rem;
     position: relative;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
 
 .box{
     background-color: var(--test-background);
     padding: 20px;
-    width: 400px;
+    width: 100%;
     z-index: 1;
     border-radius: 5px;
     margin-left: 10px;
@@ -244,6 +280,7 @@ button:hover{
 .quotes{
     position: absolute;
     top: -35px;
+    left: 0;
 }
 
 .user{
@@ -265,11 +302,14 @@ button:hover{
 }
 
 .footer{
-    padding: 9rem;
     background-color: var(--footer);
     display: flex;
     flex-direction: column;
     gap: 3rem;
+    padding-top: 9rem;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
 .footer .logo{
@@ -281,6 +321,7 @@ button:hover{
     justify-content: space-between;
     gap: 3rem;
     align-items: flex-start;
+    flex-direction: column;
 }
 
 .item-info{
@@ -295,10 +336,12 @@ button:hover{
     gap: 1.2rem;
 }
 
+
 .footer nav{
     display: flex;
     align-items: flex-start;
     gap: 3rem;
+    flex-direction: column;
 }
 
 .footer nav ul {
@@ -310,7 +353,7 @@ button:hover{
 }
 
 .footer nav ul:last-child{
-    align-items: flex-end;
+    align-items: flex-start;
 }
 
 .footer nav ul li{
@@ -329,6 +372,9 @@ button:hover{
 .social-media{
     display: flex;
     gap: 1.2rem;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
 .social-media a{
@@ -350,10 +396,7 @@ button:hover{
 
 .location{
     align-items: flex-start;
-}
-
-.location{
-    width: 400px;
+    width: 100%;
 }
 
 
@@ -363,6 +406,9 @@ button:hover{
     bottom:-15.6rem;
     display: flex;
     justify-content: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    width: 100%;
 }
 
 .container-form{
@@ -375,35 +421,43 @@ button:hover{
     align-items: center;
     gap: 1.2rem;
     flex-direction: column;
-    width: 715px;
+    width: 100%;
 }
 
 .container-form h1{
     font-size: 2rem;
+    text-align: center;
 }
 
 .container-form p{
     text-align: center;
 }
+.fill{
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    flex-direction: column;
+    width: 100%;
+}
 
-.container-form input{
+.fill input{
     background-color: var(--white);
     padding: 12px;
-    width: 400px;
+    width: 100%;
     border-radius: 50px;
     border: none;
     padding-left: 30px;
     padding-right: 30px;
 }
 
+
 input::placeholder{
     opacity: 0.3;
 }
 
-.fill{
-    display: flex;
-    align-items: center;
-    gap: 1.2rem;
+
+.fill button{
+    width: 100%;
 }
 
 .footer{
@@ -421,11 +475,12 @@ input::placeholder{
 
 .groupe-input{
     position: relative;
+    width: 100%;
 }
 
 .error{
-    position: absolute;
-    bottom: -1.4rem;
+    position: relative;
+    bottom: -.4rem;
     padding-left: 30px;
     font-size: .7rem;
     color: var(--red);
@@ -445,8 +500,18 @@ input::placeholder{
     body{
         background-color: green;
     }
+
     main{
         width: 3000px;
+    }
+
+    .nav{
+        padding: 2rem;
+    }
+    
+    .nav ul{
+        gap: 5em;
+        flex-direction: row;
     }
 
     .intro img{
@@ -477,6 +542,14 @@ input::placeholder{
         gap: 1rem;
     }
 
+    .row .item p{
+        width: 380px;
+    }
+
+    .row .item h2{
+        width: auto;
+        text-align: left;
+    }
 
     .production {
         flex-direction: row;
@@ -500,5 +573,76 @@ input::placeholder{
 
     .bg-box{
         flex-direction: row;
+        width: auto;
     }
+    
+    .box{
+        width: 400px;
+    }
+
+    .fill{
+        flex-direction: row;
+    }
+
+    .fill button{
+        width: 200px;
+    }
+
+    .error{
+        position: absolute;
+        bottom: -1.4rem;
+    }
+
+    .info-footer{
+        flex-direction: row;
+    }
+
+    .footer{
+        padding: 9rem;
+    }
+
+    .footer nav{
+        flex-direction: row;
+    }
+
+    .footer nav ul:last-child{
+        align-items: flex-end;
+    }
+
+    .social-media{
+        display: flex;
+        gap: 1.2rem;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: auto;
+    }
+
+    .img-desktop{
+        display: block;
+    }
+
+    .img-mobile{
+        display: none;
+    }
+    
+    .container-form{
+        width: 715px;
+    }
+
+    .container-form input{
+        width: 400px;
+    }
+
+    .fill button{
+        width: 400px;
+    }
+
+    .container-form h1{
+        text-align: left;
+    }
+
+    .location{
+        width: 400px;
+    }
+    
 }
