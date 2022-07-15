@@ -115,7 +115,7 @@ nav ul li a:hover{
 }
 
 .intro img{
-    width: 100%;
+    width: 760px;
 }
 
 .intro h1{
@@ -223,7 +223,7 @@ button:hover{
 }
 
 .production img{
-    width: 100%;
+    width: 400px;
 }
 
 .production a{
@@ -250,6 +250,7 @@ button:hover{
     position: relative;
     padding-left: 2rem;
     padding-right: 2rem;
+    padding-bottom: 25rem;
 }
 
 .bg-box{
@@ -303,16 +304,18 @@ button:hover{
 
 .footer{
     background-color: var(--footer);
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
-    padding-top: 9rem;
     padding-bottom: 2rem;
     padding-left: 2rem;
     padding-right: 2rem;
 }
 
-.footer .logo{
+.main-footer{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.main-footer .logo{
     width: 176px;
 }
 
@@ -337,14 +340,14 @@ button:hover{
 }
 
 
-.footer nav{
+.main-footer nav{
     display: flex;
     align-items: flex-start;
     gap: 3rem;
     flex-direction: column;
 }
 
-.footer nav ul {
+.main-footer nav ul {
     display: flex;
     flex-direction: column;
     gap: 1.2rem;
@@ -352,20 +355,20 @@ button:hover{
     width: 76px;
 }
 
-.footer nav ul:last-child{
+.main-footer nav ul:last-child{
     align-items: flex-start;
 }
 
-.footer nav ul li{
+.main-footer nav ul li{
     list-style: none;
 }
 
-.footer nav ul li a{
+.main-footer nav ul li a{
     color: var(--white);
     text-decoration: none;
 }
 
-.footer nav ul li a:hover{
+.main-footer nav ul li a:hover{
     font-weight: bold;
 }
 
@@ -401,15 +404,15 @@ button:hover{
 
 
 .form{
-    position: absolute;
     width: 100%;
-    bottom:-15.6rem;
     display: flex;
     justify-content: center;
     padding-left: 2rem;
     padding-right: 2rem;
     width: 100%;
+    transform: translateY(-50%);
 }
+
 
 .container-form{
     padding: 3rem;
@@ -422,6 +425,7 @@ button:hover{
     gap: 1.2rem;
     flex-direction: column;
     width: 100%;
+
 }
 
 .container-form h1{
@@ -460,17 +464,10 @@ input::placeholder{
     width: 100%;
 }
 
-.footer{
-    padding-top: 15.6rem;
-}
 
 .bg-cut{
     height: 7.8rem;
     background-color: var(--background-curvy);
-}
-
-.feedback{
-    padding-bottom: 9rem;
 }
 
 .groupe-input{
@@ -497,9 +494,6 @@ input::placeholder{
 
 
 @media screen and (min-width: 1440px) {
-    body{
-        background-color: green;
-    }
 
     main{
         width: 3000px;
@@ -560,6 +554,10 @@ input::placeholder{
         align-items: flex-start;
     
     }
+
+    .production img{
+        width: 400px;
+    }
     
     .production h1{
         width: 300px;
@@ -597,16 +595,13 @@ input::placeholder{
         flex-direction: row;
     }
 
-    .footer{
-        padding: 9rem;
-    }
 
-    .footer nav{
+    .main-footer nav{
         flex-direction: row;
     }
 
-    .footer nav ul:last-child{
-        align-items: flex-end;
+    .main-footer nav ul:last-child{
+        align-items: flex-start;
     }
 
     .social-media{
@@ -645,4 +640,10 @@ input::placeholder{
         width: 400px;
     }
     
+}
+
+@media screen and (max-width: 768px) {
+    .intro img{
+        width: 100%;
+    }
 }
