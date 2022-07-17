@@ -13,5 +13,5 @@ Users should be able to:
 ## Built with :
 
 - HTML 5
-- Css : flex-box / media query
+- Css : flex-box / media query / keyframes
 - Vanilla javascript
