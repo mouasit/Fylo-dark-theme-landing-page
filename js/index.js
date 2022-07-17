@@ -1,3 +1,11 @@
+window.onload = function(){
+    setTimeout(function(){
+        document.querySelector(".loader").style.display = "none";
+        document.querySelector("body").style.height = "auto";
+        document.querySelector("main").style.display = "block";
+    },1000)
+}
+
 const form = document.getElementById("form");
 const input = document.getElementById("input");
 const error = document.getElementById("error");

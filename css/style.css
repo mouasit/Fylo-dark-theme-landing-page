@@ -6,7 +6,7 @@
         --dark-blue-layout: hsl(217, 28%, 15%);
         --background: hsl(218, 28%, 13%);
         --footer:hsl(216, 53%, 9%);
-        --test-background:hsl(219, 30%, 18%);
+        --second-background:hsl(219, 30%, 18%);
         --background-curvy: #181f2b;
     
         /* Accent */
@@ -33,16 +33,52 @@
     
     body{
         font-size: 14px;
-        background-color: var(--test-background);
+        background-color: var(--second-background);
         color: var(--white);
         font-family: var(--font-family-body);
+        height: 100vh;
         display: flex;
         justify-content: center;
+        align-items: center;
     }
+
+    .loader {
+        height: 5rem;
+        width: 5rem;
+        border-radius: 50%;
+        border: 1px solid var(--cyan);
+        border-top-color: var(--second-background);
+        box-sizing: border-box;
+        background: transparent;
+        animation: loading 1s linear infinite;
+      }
+      
+      @keyframes loading {
+        0% {
+          transform: rotate(0deg);
+        }
+        0% {
+          transform: rotate(360deg);
+        }
+      }
     
     main{
         width: 100%;
+        display: none;
     }
+
+    .animation-fadein {
+        animation: fadeIn 1.5s forwards;
+      }
+
+    @keyframes fadeIn {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
     
     h1,h2,h3,h4,h5{
         font-family: var(--font-family-heading);
@@ -261,7 +297,7 @@
     
     
     .box{
-        background-color: var(--test-background);
+        background-color: var(--second-background);
         padding: 20px;
         width: 100%;
         z-index: 1;
@@ -412,7 +448,7 @@
     
     .container-form{
         padding: 3rem;
-        background-color: var(--test-background);
+        background-color: var(--second-background);
         border-radius: 5px;
         box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
         display: flex;
@@ -647,5 +683,4 @@
         main{
             width: 100vh;
         }
-        
     }
