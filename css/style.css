@@ -67,11 +67,11 @@
     h1,h2,h3,h4,h5{
         font-family: var(--font-family-heading);
     }
-    .nav{
+    .navigation{
         padding: 2rem;
     }
     
-    .nav ul{
+    .navigation ul{
         display: flex;
         align-items: center;
         gap: 2em;
@@ -84,15 +84,15 @@
         gap: 5rem;
     }
     
-    .nav ul li:first-child{
+    .navigation li:first-child{
         flex: 1
     }
     
-    .nav ul li{
+    .navigation ul li{
         list-style: none;
     }
     
-    .nav ul li a{
+    .navigation ul li a{
         color: var(--white);
         text-decoration: none;
     }
@@ -519,11 +519,11 @@
             width: 3000px;
         }
     
-        .nav{
+        .navigation{
             padding: 2rem;
         }
         
-        .nav ul{
+        .navigation ul{
             gap: 5em;
             flex-direction: row;
         }
