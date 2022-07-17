@@ -1,4 +1,4 @@
-# Interactive rating component
+# Fylo dark theme landing page
 ![desktop-preview](./design/desktop-preview.jpg)
 
 ## Overview
