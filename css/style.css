@@ -400,7 +400,7 @@
         width: 100%;
     }
     
-    .social-media button{
+    .social-media span{
         color: var(--white);
         border: 1px solid var(--white);
         border-radius: 50px;
@@ -412,9 +412,10 @@
         height: 30px;
         background-image: none;
         background-color: transparent;
+        cursor: pointer;
     }
     
-    .social-media button:hover{
+    .social-media span:hover{
         color: var(--cyan);
         border-color: var(--cyan);
     }
