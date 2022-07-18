@@ -60,7 +60,7 @@
         }
       }
     
-    main{
+    .content{
         width: 100%;
     }
     
@@ -517,7 +517,7 @@
     
     @media screen and (min-width: 1440px) {
     
-        main{
+        .content{
             width: 3000px;
         }
     
@@ -666,7 +666,7 @@
     }
     
     @media screen and (max-width: 270px) {
-        main{
+        .content{
             width: 100vh;
         }
     }
