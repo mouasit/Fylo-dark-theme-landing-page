@@ -67,11 +67,11 @@
     h1,h2,h3,h4,h5{
         font-family: var(--font-family-heading);
     }
-    #navigation{
+    .navigation{
         padding: 2rem;
     }
     
-    #navigation ul{
+    .navigation ul{
         display: flex;
         align-items: center;
         gap: 2em;
@@ -84,20 +84,24 @@
         gap: 5rem;
     }
     
-    #navigation li:first-child{
+    .navigation li:first-child{
         flex: 1
     }
     
-    #navigation ul li{
+    .navigation ul li{
         list-style: none;
     }
     
-    #navigation ul li a{
+    .navigation ul li a{
         color: var(--white);
         text-decoration: none;
     }
     
-    nav ul li a:hover{
+    .navigation ul li a:hover{
+        text-decoration:underline;
+    }
+
+    .footer-navigation ul li a:hover{
         text-decoration:underline;
     }
     
@@ -356,14 +360,14 @@
     }
     
     
-    .main-footer nav{
+    .main-footer .footer-navigation{
         display: flex;
         align-items: flex-start;
         gap: 3rem;
         flex-direction: column;
     }
     
-    .main-footer nav ul {
+    .main-footer .footer-navigation ul {
         display: flex;
         flex-direction: column;
         gap: 1.2rem;
@@ -371,20 +375,20 @@
         width: 76px;
     }
     
-    .main-footer nav ul:last-child{
+    .main-footer .footer-navigation ul:last-child{
         align-items: flex-start;
     }
     
-    .main-footer nav ul li{
+    .main-footer .footer-navigation ul li{
         list-style: none;
     }
     
-    .main-footer nav ul li a{
+    .main-footer .footer-navigation ul li a{
         color: var(--white);
         text-decoration: none;
     }
     
-    .main-footer nav ul li a:hover{
+    .main-footer .footer-navigation ul li a:hover{
         font-weight: bold;
     }
     
@@ -521,11 +525,11 @@
             width: 3000px;
         }
     
-        #navigation{
+        .navigation{
             padding: 2rem;
         }
         
-        #navigation ul{
+        .navigation ul{
             gap: 5em;
             flex-direction: row;
         }
@@ -618,11 +622,11 @@
         }
     
     
-        .main-footer nav{
+        .main-footer .footer-navigation{
             flex-direction: row;
         }
     
-        .main-footer nav ul:last-child{
+        .main-footer .footer-navigation ul:last-child{
             align-items: flex-start;
         }
     
