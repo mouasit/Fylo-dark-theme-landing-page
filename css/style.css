@@ -33,7 +33,7 @@
     
     body{
         font-size: 14px;
-        background-color: var(--second-background);
+        background-color: var(--dark-blue-layout);
         color: var(--white);
         font-family: var(--font-family-body);
         display: flex;
@@ -440,7 +440,7 @@
     
     .container-form{
         padding: 3rem;
-        background-color: var(--second-background);
+        background-color: var(--dark-blue-layout);
         border-radius: 5px;
         box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
         display: flex;
