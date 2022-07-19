@@ -68,7 +68,8 @@
         font-family: var(--font-family-heading);
     }
     .navigation{
-        padding: 2rem;
+        padding: 5rem;
+        padding-bottom: 2rem;
     }
     
     .navigation ul{
@@ -324,8 +325,8 @@
     
     .footer{
         background-color: var(--footer);
-        padding-bottom: 2rem;
-        padding-left: 2rem;
+        padding-bottom: 5rem;
+        padding-left: 5rem;
         padding-right: 2rem;
     }
     
@@ -526,10 +527,6 @@
             width: 3000px;
         }
     
-        .navigation{
-            padding: 2rem;
-        }
-        
         .navigation ul{
             gap: 5em;
             flex-direction: row;
